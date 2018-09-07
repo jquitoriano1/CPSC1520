@@ -6,8 +6,15 @@ body {
 }
 
 .site-nav{
-  background-color: rgba(0,0,0,0.1);
+  background-color: rgba(0,0,0,1);
   box-shadow: 0 0 5px 1px rgba(0,0,0,0.25);
+  padding:0.25rem;
+  color: #fff;
+}
+
+.icon-view{
+  display:flex;
+  justify-content:space-between;
 }
 
 .list-view{
@@ -21,6 +28,11 @@ body {
     display: none;
   }
   .list-view{
-    display: block;
+    display: flex;
+    justify-content: center;
+  }
+
+  .list-view li{
+    margin-right: 2rem;
   }
 }
