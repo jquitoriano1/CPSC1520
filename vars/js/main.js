@@ -49,6 +49,6 @@
 */
 // Decalaring a Variable
 
-var memberLoginForm = document.getElementById('member-signin')
+var secondIcon = document.querySelector('.icon-view li:last-child')
 
-console.log(memberLoginForm)
+console.log(secondIcon)
