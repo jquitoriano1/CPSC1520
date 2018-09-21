@@ -11,7 +11,7 @@ window.addEventListener('DOMContentLoaded',function(){
     var toogleButton = gallery.querySelector('.toggleBtn');
     toogleButton.addEventListener('click', hideImage);
     function hideImage(e){
-        gallery.querySelector('.gallery-display').classList.add('.hidden');
+        gallery.querySelector('.gallery-display').classList.toggle('hidden');
     }
         
 })
