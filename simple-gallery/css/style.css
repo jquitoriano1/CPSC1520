@@ -15,3 +15,20 @@ body {
 .red{
   background: tomato;
 }
+
+.counter{
+  width: 200px;
+  padding: 1.5rem;
+  background: tomato;
+}
+
+div.display{
+  text-align: center;
+  background: bisque;
+  height: 10rem;
+  margin-bottom: 1rem;
+}
+div.controls{
+  display: flex;
+  justify-content: center;
+}
