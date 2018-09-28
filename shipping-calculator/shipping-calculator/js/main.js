@@ -16,13 +16,16 @@ window.addEventListener("DOMContentLoaded",function(){
 
     //object
 
-    var objPractice = document.querySelector(".bored");
-
+    var objPractice = document.querySelector(".bored")
 
     var imageObj = {
         id: 1,
         thumbnailsrc: "img/visa.png",
         largesrc: "img/visa.png"
     }
-    console.log(imageObj.thumbnailsrc);
+
+    objPractice.addEventListener("click",function(e){
+        console.log(e.currentTarget.dataset.id);
+    })
+    
 })
