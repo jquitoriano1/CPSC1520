@@ -43,7 +43,7 @@ window.addEventListener('DOMContentLoaded',function(){
             console.log(count);
         }
         else{
-            count--
+            count--;
             console.log(count);
         }
     }
