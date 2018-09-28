@@ -12,4 +12,17 @@ window.addEventListener("DOMContentLoaded",function(){
         e.preventDefault();
         console.log("die");
     })
+
+
+    //object
+
+    var objPractice = document.querySelector(".bored");
+
+
+    var imageObj = {
+        id: 1,
+        thumbnailsrc: "img/visa.png",
+        largesrc: "img/visa.png"
+    }
+    console.log(imageObj.thumbnailsrc);
 })
