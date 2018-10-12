@@ -1,6 +1,7 @@
 // Enter your JavaScript for the solution here...
 
 window.addEventListener("DOMContentLoaded",function(){
+  //declare and test variables using console.log(variable)
   var imageFront = document.querySelector('div.editor img');
   var thumbnailH2 = document.querySelector('.editor h2');
   var imageText = document.querySelector('.editor p');
@@ -9,7 +10,7 @@ window.addEventListener("DOMContentLoaded",function(){
   var thumbImage = document.querySelector('.thumbnails img');
   var error = document.querySelector('p.error.hidden');
 
-
+  //function for changing the images
   function imageChangeEvent(evt) {
     var clickTarget = evt.target;
     var displayTag = document.querySelector('form #tag');
@@ -26,8 +27,11 @@ window.addEventListener("DOMContentLoaded",function(){
 
   }//end of imageChangeEvent function
 
+  //add event listener to the thumbnail images
   thumbnailImage.addEventListener('click', imageChangeEvent); 
 
+
+  //start of function for the tag error handling/ saving
   document.querySelector('.editor form').addEventListener('submit', function(evt) {
     console.log('form has been submitted...');
     var frm = evt.target;
@@ -51,6 +55,6 @@ window.addEventListener("DOMContentLoaded",function(){
     }
 
     evt.preventDefault();
-  });//end of error handling for the tags
+  });//end of error handling/saving for the tags
 
 });//end of Domcontent function
